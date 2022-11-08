@@ -1,0 +1,11 @@
+<h1>Bieżąca data</h1>
+<?=$dzisiaj // dostęp do zmiennej widoku z $this ?>
+<h1>Dni tygodnia</h1>
+<ul>
+    <?php foreach ($dni_tygodnia as $nr => $dzien):?>
+        <li>
+            <?=$nr+1 ?>:
+            <strong><?=$dzien ?></strong>
+        </li>
+    <?php endforeach; ?>
+</ul>
